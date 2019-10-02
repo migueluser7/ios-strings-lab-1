@@ -66,6 +66,14 @@ Print out the last character in the string below.  You cannot use the Character 
 
 `let myStringSeven = "Hello world!"`
 
+ANSWER
+
+let myStringSeven = "Hello world!"
+
+let lastCharacterLocation = myStringSeven.index(before: myStringSeven.endIndex)
+let lastCharacter = myStringSeven[lastCharacterLocation]
+
+print(lastCharacter)
 
 
 ***
