@@ -14,20 +14,50 @@
 Write code that prints out all the numbers from 1 to 10 as a single string.
 (Hint: the `String()` function can convert an Int to a String)
 
+ANSWER
+
+var numString = ""
+for num in  1...10 {
+    numString += String(num)
+}
+print(numString) // "12345678910"
+
 ***
 ## Question 2
 
 Write code that prints out all the even numbers from 5 to 51 as a single string.
+
+ANSWER
+
+var numString = ""
+for num in  5...51 where num % 2 == 0{
+    numString += String(num)
+}
+print(numString)
 
 ***
 ## Question 3
 
 Write code that prints out every number ending in 4 between 1 and 60 as a single string.
 
+ANSWER
+
+var numString = ""
+for num in  1...60 where num % 10 == 4{
+    numString += String(num)
+}
+print(numString)
 ***
 ## Question 4
 
 Print each character in the string `"Hello world!"`
+
+ANSWER
+
+var str = "Hello world!"
+for char in str {
+    print(char)
+}
 
 ***
 ## Question 5
@@ -35,6 +65,8 @@ Print each character in the string `"Hello world!"`
 Print out the last character in the string below.  You cannot use the Character literal "!" (i.e you must access `myStringSeven`'s characters).
 
 `let myStringSeven = "Hello world!"`
+
+
 
 ***
 ## Question 6
