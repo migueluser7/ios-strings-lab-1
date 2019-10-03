@@ -83,16 +83,50 @@ Write code that switches on a string, given the following conditions:
 - If the string's length is even, print out every character.
 - If the string's length is odd, print out every other character.
 
+ANSWER
+
+var test13 = "testing"
+
+switch test13 {
+case test13 where test13.count % 2 == 0:
+    for char in test13 {
+        print(char, terminator: " ")
+    }
+default:
+    for (index, char) in test13.enumerated() {
+        if index % 2 == 1 {
+            print(char, terminator: " ")
+        }
+    }
+}
 ***
 ## Question 7
 
 Initialize a String with a character. Show that it is a Character, and not another String, that you're using to initialize it.
 
+ANSWER
+
+var thisAcharacter: Character = "A"
 ***
 ## Question 8
 
 Build five pairs of **canonically equivalent** strings, the first of each being a pre-composed character and the second being one that uses combinable unicode scalars. Show that they are equivalent.
 
+ANSWER
+
+var str1 = "one"
+var str2 = "two"
+var str3 = "three"
+var str4 = "four"
+var str5 = "five"
+var str11 = "\u{6F}\u{6E}\u{65}"
+var str22 = "\u{74}\u{77}\u{6F}"
+var str33 = "\u{74}\u{68}\u{72}\u{65}\u{65}"
+var str44 = "\u{66}\u{6F}\u{75}\u{72}"
+var str55 = "\u{66}\u{69}\u{76}\u{65}"
+if str1 == str11 {
+    print(str1, str11)
+}
 ***
 ## Question 9
 
@@ -175,7 +209,11 @@ You are given a string stored in variable `aString`. Create a new string called 
 var aString = "this string has 29 characters"
 var reverse = ""
 
-// Your code here
+// ANSWER
+
+var aString = "this string has 29 characters"
+var reverse = String(aString.reversed())
+print(reverse)
 ```
 
 Example:
