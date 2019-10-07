@@ -132,6 +132,9 @@ if str1 == str11 {
 
 **Using only Unicode**, print out `"HELLO WORLD!"`
 
+ANSWER
+
+print("\u{48}\u{45}\u{4C}\u{4C}\u{4F} \u{57}\u{4F}\u{52}\u{4C}\u{44}\u{21}")
 ***
 ## Question 10
 
